@@ -5,7 +5,7 @@
         Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
         For details, see http://go.microsoft.com/fwlink/?LinkID=617521
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *" charset="utf-8">
 
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
@@ -21,27 +21,56 @@
     <!--esto es lo de jquery-->
 
     <title>SpaceVillage</title>
+            
 </head>
 <body>
-    <div data-role="page">
-        <div data-role="header" data-position="fixed">
-            <h1>
-                SpaceVillage
-            </h1>
-        </div>
-        <div role="main" class="ui-content">
-            ...
-        </div>
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">                
-                <ul>
-                    <li><a href="#" data-icon="grid">Summary</a></li>
-                    <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
-                    <li><a href="#" data-icon="gear">Setup</a></li>
-                </ul>
+    <div data-role="page" id="mainpage">
+       
+            <div data-role="panel" id="mypanel1" data-inset="true">
+                     <ul data-role="listview">
+                      <li data-icon="edit"><a href="#">Tips</a></li>
+                      <li data-icon="comment"><a href="#">Noticias</a></li>
+                      <li data-icon="star"><a href="#">Minijuegos</a></li>
+                      <li data-icon="search"><a href="#">Acerca de</a></li>
+                       </ul>
             </div>
+        <div data-role="header" data-position="fixed">
+            <h1>SpaceVillage</h1>
+        <div role="main" class="ui-content">
+             
+            <a class="ui-btn" href="#mypanel1">Menú </a>
+          
+            </div>
+       <br></br>
+       <br></br>
+        <div class="ui-grid-b" style="width:100%" align="middle">                
+            <div class="ui-block-a" style="width:50%">            
+                
+                    <img src="images/Ejemplo.png"/>
+                              
+            </div>
+            <div class="ui-block-b" style="width:50%">        
+                
+                    <img src="images/Ejemplo.png"/>
+                     
+            </div>
+            <div class="ui-block-a" style="width:50%">            
+                
+                    <img src="images/Ejemplo.png"/>
+               
+            </div>
+            <div class="ui-block-b" style="width:50%">        
+                
+                    <img src="images/Ejemplo.png"/>
+                
+            </div>
+            </div>    
         </div>
-    </div>
+    </div>  
+     
+    <script>
+    document.ontouchmove=function(e){return true;}    
+    </script>    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
