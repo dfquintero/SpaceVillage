@@ -6,7 +6,7 @@
         For details, see http://go.microsoft.com/fwlink/?LinkID=617521
     -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
+    <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -19,7 +19,7 @@
     <script src="jQuery/jquery-2.2.3.min.js"></script>
     <script src="jQuery/Mobile/jquery.mobile-1.4.5.min.js"></script>
     <!--esto es lo de jquery-->
-
+         
     <title>SpaceVillage</title>
 </head>
 <body>
@@ -29,18 +29,174 @@
                 SpaceVillage
             </h1>
         </div>
-        <div role="main" class="ui-content">
-            ...
+        <!--Empieza-->
+        <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+   <!--Casas-->
+     <div data-role="collapsible">
+                   <h3>Viviendas</h3>
+                    <p>I'm the collapsible content for section 1</p>
+             <fieldset class="ui-grid-b" data-role="controlgroup" data-type="horizontal">
+                          
+                               <table style="widght:70%"> <tr> <td>
+                                     <input name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked" type="radio" >
+                                           <label for="radio-choice-h-2a">Vivienda 1</label>
+                                      <div class="ui-block-a">
+                                      <ul data-role="listview">
+                                          
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>-Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                               <td>
+                                    <input name="radio-choice-h-2" id="radio-choice-h-2b" value="off" type="radio">
+                                        <label for="radio-choice-h-2b">Vivienda 2</label>
+                                         <div class="ui-block-b">
+                                      <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                        <td>
+                                    <input name="radio-choice-h-2" id="radio-choice-h-2c" value="other" type="radio">
+                                        <label for="radio-choice-h-2c">Vivienda 3</label>
+                                         
+                                         
+                                         <div class="ui-block-c" >
+                                       <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                                <tr>
+                                            </table>
+                </fieldset>
+                  
+   </div>
+   
+    <!--Granjas-->
+    <div data-role="collapsible">
+        <h3>Granjas</h3>
+    <p>I'm the collapsible content for section 2</p>
+     <fieldset class="ui-grid-b" data-role="controlgroup" data-type="horizontal">
+                          
+                               <table style="widght:70%"> <tr> <td>
+                                     <input name="radio-choice-h-3" id="radio-choice-h-3a" value="on" checked="checked" type="radio" >
+                                           <label for="radio-choice-h-3a">Granja 1</label>
+                                      <div class="ui-block-a">
+                                      <ul data-role="listview">
+                                          
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>-Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                               <td>
+                                    <input name="radio-choice-h-3" id="radio-choice-h-3b" value="off" type="radio">
+                                        <label for="radio-choice-h-3b">Granja 2</label>
+                                         <div class="ui-block-b">
+                                      <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                        <td>
+                                    <input name="radio-choice-h-3" id="radio-choice-h-3c" value="other" type="radio">
+                                        <label for="radio-choice-h-3c">Granja 3</label>
+                                         
+                                         
+                                         <div class="ui-block-c" >
+                                       <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                                <tr>
+                                            </table>
+                </fieldset>
+    </div>
+    <!--Central Eléctrica-->
+    <div data-role="collapsible">
+        <h3>Centrales Eléctricas</h3>
+    <p>I'm the collapsible content for section 3</p>
+            <fieldset class="ui-grid-b" data-role="controlgroup" data-type="horizontal">
+                          
+                               <table style="widght:70%"> <tr> <td>
+                                     <input name="radio-choice-h-4" id="radio-choice-h-4a" value="on" checked="checked" type="radio" >
+                                           <label for="radio-choice-h-4a">Eléctica 1</label>
+                                      <div class="ui-block-a">
+                                      <ul data-role="listview">
+                                          
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>-Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                               <td>
+                                    <input name="radio-choice-h-4" id="radio-choice-h-4b" value="off" type="radio">
+                                        <label for="radio-choice-h-4b">Eléctica 2</label>
+                                         <div class="ui-block-b">
+                                      <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                        <td>
+                                    <input name="radio-choice-h-4" id="radio-choice-h-4c" value="other" type="radio">
+                                        <label for="radio-choice-h-4c">Eléctica 3</label>
+                                         
+                                         
+                                         <div class="ui-block-c" >
+                                       <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                                <tr>
+                                            </table>
+                </fieldset>
+    </div>
+    <!--Fuente Hídrica-->
+    <div data-role="collapsible">
+        <h3>Fuentes Hídricas</h3>
+    <p>I'm the collapsible content for section 4</p>
+            <fieldset class="ui-grid-b" data-role="controlgroup" data-type="horizontal">
+                          
+                               <table style="widght:70%"> <tr> <td>
+                                     <input name="radio-choice-h-5" id="radio-choice-h-5a" value="on" checked="checked" type="radio" >
+                                           <label for="radio-choice-h-5a">Hidríco 1</label>
+                                      <div class="ui-block-a">
+                                      <ul data-role="listview">
+                                          
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>-Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                               <td>
+                                    <input name="radio-choice-h-5" id="radio-choice-h-5b" value="off" type="radio">
+                                        <label for="radio-choice-h-5b">Hidríco 2</label>
+                                         <div class="ui-block-b">
+                                      <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                        <td>
+                                    <input name="radio-choice-h-5" id="radio-choice-h-5c" value="other" type="radio">
+                                        <label for="radio-choice-h-5c">Hidríco 3</label>
+                                         
+                                         
+                                         <div class="ui-block-c" >
+                                       <ul data-role="listview">
+                                          <li><img src="images/casa1.png"></li>
+                                          <li>Atributo 1<br>-Atributo 2<br>-Atributo 3</li>
+                                      </ul>
+                                        </div> </td>
+                                                <tr>
+                                            </table>
+                </fieldset>
+    </div>
+</div>
+       
         </div>
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">                
-                <ul>
-                    <li><a href="#" data-icon="grid">Summary</a></li>
-                    <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
-                    <li><a href="#" data-icon="gear">Setup</a></li>
-                </ul>
-            </div>
-        </div>
+  <div data-role="footer" data-position="fixed"></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
