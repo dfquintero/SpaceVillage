@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <title>SpaceApps_SIMSPACE</title>
+</head>
+<body>
+  <script >
+var url = "http://marsweather.ingenology.com/v1/latest/?format=jsonp";
+
+
+$.ajax({
+  type : 'GET',
+  url: url,
+  success: handleResult,
+  dataType : 'jsonp'
+});
+function handleResult(result){
+  console.log(result);
+
+
+
+  $("#report").text(result.report.terrestrial_date);
+  $("#report1").text(result.report.min_temp+ "°C");
+  $("#report3").text(result.report.pressure+" mmHg, o casi alcanza la de la Tierra!!");
+  $("#report2").text(result.report.max_temp + "°C");
+  $("#report4").text(result.report.sunrise);
+  $("#report5").text(result.report.sunset);
+}
+
+
+
+
+
+</script>
+
+
+
+  <b>¡¡MARS!!</b>
+  <pre id="reqObject"></pre>
+
+<table style="width:100%">
+  <tr>
+    <td>Datos terrestres :</td>
+    <td  id="report"></td>		
+  </tr>
+  <tr>
+    <td > Temperatura mínima:</td>
+    <td id="report1"></td>		
+  </tr>
+  <tr>
+    <td >Presión : </td>
+    <td id="report3"></td>		
+  </tr>
+ <tr>
+    <td>Temperatura máxima:</td>
+    <td id="report2"></td>		
+  </tr>
+  <tr>
+    <td>último Amanecer:</td>
+    <td id="report4"></td>		
+  </tr>
+  <tr>
+    <td>última puesta:</td>
+    <td id="report5"></td>		
+  </tr>
+</table>  
+</body>
+</html>
